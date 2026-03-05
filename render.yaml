@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: discord-music-bot
+    runtime: python
+    buildCommand: bash build.sh
+    startCommand: python main.py
+    plan: free
