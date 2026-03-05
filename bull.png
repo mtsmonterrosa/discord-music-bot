@@ -1,0 +1,23 @@
+[phases.setup]
+nixPkgs = ["python311", "ffmpeg"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "python main.py"
+```
+
+---
+
+## Paso 3 — Subir el archivo nuevo a GitHub
+
+Ejecuta estos comandos en el CMD uno por uno:
+```
+git add nixpacks.toml
+```
+```
+git commit -m "Agregar nixpacks.toml para Railway"
+```
+```
+git push
